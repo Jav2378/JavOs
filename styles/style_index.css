@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: url(Fondo1.2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.profile{
+    text-align: center;
+}
+
+.profile{
+    position: relative;
+}
+
+.avatar{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    text-align: center;
+    transform: translate(-0%, 0%);
+}
+
+.tittle{
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 2px  0px 0px #fff,
+               0px  2px 0px #fff,
+              -2px  0px 0px #fff,
+               0px -2px 0px #fff;
+    color: #000;
+}
+
+.pres{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px  0px 0px #fff,
+               0px  2px 0px #fff,
+              -2px  0px 0px #fff,
+               0px -2px 0px #fff;
+}
+
+.button{
+    border: none;
+    width: 30%;
+    color: white;
+    font-size: 20px;
+    background:  #49057d;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover{
+    transform: scale(1);
+    transform: translate(0%, -10%);
+    border-radius: 5px;
+    background: #49057d;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    width: 30%;
+    box-shadow: 7px 13px 13px #000;
+}

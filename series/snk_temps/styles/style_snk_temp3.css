@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: url(../../../fondos/Fondo24.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.general{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.buscador{
+    display: flex;
+    align-items: center;
+}
+  
+.buscador input[type="search"] {
+    border: none;
+    padding: 5px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+  
+.buscador button[type="submit"] {
+    border: none;
+    background-color: #FFB300;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.p1{
+    text-align: center;
+    width: auto;
+    padding: 50px 80px;
+}
+
+.p2{
+    text-align: center;
+    width: auto;
+    padding: 0px 80px;
+}
+
+.p3{
+    text-align: center;
+    width: auto;
+    padding: 0px 80px;
+}
+
+.p4{
+    text-align: center;
+    width: auto;
+    padding: 0px 80px;
+}
+
+.p5{
+    text-align: center;
+    width: auto;
+    padding: 0px 80px;
+}
+
+.p6{
+    text-align: center;
+    width: auto;
+    padding: 0px 80px;
+}
+
+.ppicture{
+    width: 233px;
+    height: 350px;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+.header{
+    display: flex;
+    flex-wrap:wrap;
+    background: #210369;
+    text-align: center;
+    width: 100%;
+    box-shadow: 7px 13px 13px #000;
+    color: #fff;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.buscador input[type="search"] {
+    width: auto;
+    padding: 15px 20px;
+}
+  
+.buscador{
+    padding-left: 50px;
+}
+
+.chooser{
+    width: 100%;
+    padding: 25px 50px;
+}
+
+.logout{
+    width: 100%;
+}
+
+.tittle{
+    padding: 15px 20px;
+}
+
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 10px;
+    background:  #49057d;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.conteleft{
+    background: #210369;
+    text-align: center;
+    width: 15%;
+    height: 100%;
+    box-shadow: 7px 13px 13px #000;
+    color: #fff;
+    text-align: center;
+}
+
+.pantalla{
+    width: 100%;
+}
+
+.generalbody{
+    display: flex;
+}
+
+.sect1 input[type="submit"] {
+    width: auto;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+.sect2 input[type="submit"] {
+    width: auto;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+.frases{
+    display: flex;
+    width: 100%;
+}
+
+.frase{
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    background: none;
+    font-size: 20px;
+}
+
+.category{
+    width: 200px;
+    height: 50px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.general-categorias{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.p1-cat{
+    text-align: center;
+    width: auto;
+    padding: 100px 200px;
+}
+
+.p2-cat{
+    text-align: center;
+    width: auto;
+    padding: 50px 200px;
+}
+
+.botton{
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+  }  
+
+.p2-cat{
+    text-align: center;
+    width: 75%;
+    padding: 50px 200px;
+}
+
+  .category{
+    border: none;
+    width: auto;
+    color: white;
+    font-size: 20px;
+    background:  #49057d;
+    padding: 30px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    line-height: 0px;
+}
+
+.category:hover{
+    transform: scale(1);
+    transform: translate(0%, -10%);
+    border-radius: 5px;
+    background: #49057d;
+    padding: 30px 35px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    width: auto;
+    box-shadow: 7px 13px 13px #000;
+    align-items: center;
+    line-height: 0px;
+}

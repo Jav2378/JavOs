@@ -1,0 +1,75 @@
+<?php
+    // Iniciamos la sesión
+    session_start();
+
+    // Comprobamos si el usuario ha iniciado sesión
+    if(!isset($_SESSION['email'])){
+        // Si no ha iniciado sesión, destruimos todas las variables de sesión y redireccionamos al usuario a la página de inicio de sesión
+        session_destroy();
+        header("location: ../inicio_sesion.php");
+        exit;
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Punch Man</title>
+    <link rel="stylesheet" href="styles/style_one punch man.css">
+</head>
+<body>
+<header class="header">
+    <h1 class="tittle">One Punch Man</h1>
+    <nav>
+        <div class="contenedor">
+            <ul>
+            <form class="logout" method="POST" action="cerrar_sesion.php">
+                <input type="submit" class="button" value="Cerrar sesión">
+            </form>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="generalbody">
+<box class="conteleft">
+    <box class="sect1">
+        <br>
+        <a href="../menu.html" target="_self"><input type="submit" class="redirection" value="Inicio"></a>
+        <br>
+        <a href="../peliculas.html" target="_self"><input type="submit" class="redirection" value="Películas"></a>
+        <br>
+        <a href="../series.html" target="_self"><input type="submit" class="redirection" value="Series"></a>
+        <br>
+    </box>
+    <box class="sect3">
+        <a class="botton" href="parasyte.html"><ul>Parasyte</ul></a>
+        <a class="botton" href="one punch man.html"><ul>One Punch Man</ul></a>
+        <a class="botton" href="sakura.html"><ul>Sakura Card Captor</ul></a>
+        <a class="botton" href="snk.html"><ul>Shingeki No Kiojin</ul></a>
+    </box>
+    <div></div>
+    <box class="sect2">
+        <br>
+        <a href="../categoria.html" target="_self"><input type="submit" class="redirection" value="Categorías"></a>
+        <br>
+    </box>
+    </box>
+
+<div class="pantalla">
+    <box class="general-categorias">    
+        <box class="p2-cat">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="one_punch_man_temps/one punch man_temp1.html" target="_self"><input type="submit" class="category" value="Temporada 1"></a>
+            <a href="one_punch_man_temps/one punch man_temp2.html" target="_self"><input type="submit" class="category" value="Temporada 2"></a>
+        </div>
+        </box>
+</div>
+    </box>
+</div>
+</body>
+</html>

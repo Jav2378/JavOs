@@ -1,0 +1,112 @@
+<?php
+    // Iniciamos la sesión
+    session_start();
+
+    // Comprobamos si el usuario ha iniciado sesión
+    if(!isset($_SESSION['email'])){
+        // Si no ha iniciado sesión, destruimos todas las variables de sesión y redireccionamos al usuario a la página de inicio de sesión
+        session_destroy();
+        header("location: ../inicio_sesion.php");
+        exit;
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parasyte</title>
+    <link rel="stylesheet" href="styles/style_parasyte.css">
+</head>
+<body>
+<header class="header">
+    <h1 class="tittle">Parasyte</h1>
+    <nav>
+        <div class="contenedor">
+            <ul>
+            <form class="logout" method="POST" action="cerrar_sesion.php">
+                <input type="submit" class="button" value="Cerrar sesión">
+            </form>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="generalbody">
+<box class="conteleft">
+    <box class="sect1">
+        <br>
+        <a href="../menu.html" target="_self"><input type="submit" class="redirection" value="Inicio"></a>
+        <br>
+        <a href="../peliculas.html" target="_self"><input type="submit" class="redirection" value="Películas"></a>
+        <br>
+        <a href="../series.html" target="_self"><input type="submit" class="redirection" value="Series"></a>
+        <br>
+    </box>
+    <box class="sect3">
+        <a class="botton" href="parasyte.html"><ul>Parasyte</ul></a>
+        <a class="botton" href="one punch man.html"><ul>One Punch Man</ul></a>
+        <a class="botton" href="sakura.html"><ul>Sakura Card Captor</ul></a>
+        <a class="botton" href="snk.html"><ul>Shingeki No Kiojin</ul></a>
+    </box>
+    <div></div>
+    <box class="sect2">
+        <br>
+        <a href="../categoria.html" target="_self"><input type="submit" class="redirection" value="Categorías"></a>
+        <br>
+    </box>
+    </box>
+
+<div class="pantalla">
+    <box class="general-categorias">    
+    <box class="p2-cat">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="https://drive.google.com/file/d/1KYItrBmuaZnOBMZESXYLOfo2EGbBr6M1/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 1"></a>
+            <a href="https://drive.google.com/file/d/1mYEW1gYbcCQ9_vQM-HDF_PSyxlnQ0HSh/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 2"></a>
+            <a href="https://drive.google.com/file/d/1VTRaLnGXr0d1HDDtocQvghLpOI_nf3pL/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 3"></a>
+            <a href="https://drive.google.com/file/d/1ZUTFpL9v6C3TGPMKuJrZxhQyPjjEMxPa/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 4"></a>
+            <a href="https://drive.google.com/file/d/1sxC_uuGKXeW0fCXKDaH7pDlFYEbPkbGG/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 5"></a>
+            <a href="https://drive.google.com/file/d/1CA57Risp9VIVLSg1_clDVKg7uEPl8pbq/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 6"></a>
+        </div>
+        </box>
+        <box class="p2-cat">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="https://drive.google.com/file/d/1J6Ivvjy-bKXVXhC8_oHQG5UA3rLVktCc/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 7"></a>
+            <a href="https://drive.google.com/file/d/1LTMzZu1niqvlKHxWjKPGwJU0cJ6XenMJ/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 8"></a>
+            <a href="https://drive.google.com/file/d/17rVxhbQFVJwE1H_nhJcMzVPJLJl1xkn9/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 9"></a>
+            <a href="https://drive.google.com/file/d/1JQ9xLtTwOWJygSIetUiEaGe9vN2brgU4/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 10"></a>
+            <a href="https://drive.google.com/file/d/1MGBvjtlhdKDRL9qaP12oVFmj7_BmdTzq/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 11"></a>
+            <a href="https://drive.google.com/file/d/170konhz4hSxP_aIvVGEgxsdqTA5yOBHY/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 12"></a>
+        </div>
+        </box>
+        <box class="p2-cat">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="https://drive.google.com/file/d/1YOM8CQXz_VXznQczw2GxBQgPsduE4oHh/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 13"></a>
+            <a href="https://drive.google.com/file/d/1T4fHB4z7uwwEmz0eMclKUTktuhfOBSbv/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 14"></a>
+            <a href="https://drive.google.com/file/d/1awhqEb5wLDDrn6B-N0N-tDse8-V1i4ls/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 15"></a>
+            <a href="https://drive.google.com/file/d/1u2wty3geflvJaCwXBImNubXi7icjrM4T/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 16"></a>
+            <a href="https://drive.google.com/file/d/1QC-u_eVAjkyLnu2pAFY1Sjybc-wwJ-QR/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 17"></a>
+            <a href="https://drive.google.com/file/d/1WA64NhyMu0ijEjBacVQ3rPVXZ7Bc9lhY/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 18"></a>
+        </div>
+        </box>
+        <box class="p2-cat">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="https://drive.google.com/file/d/1F2ObfxQ13ZV2N0Tmsf_UEHdt4xzDwpDg/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 19"></a>
+            <a href="https://drive.google.com/file/d/1tUjwa25rFK3fKGPy5XPg07v8v3MrJbqe/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 20"></a>
+            <a href="https://drive.google.com/file/d/1pWP-iqsfiQsWnt6r_hHhAHTISU5HL6A_/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 21"></a>
+            <a href="https://drive.google.com/file/d/18mjUVqrP01ffWpsfH26hlJrkejUW9Gma/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 22"></a>
+            <a href="https://drive.google.com/file/d/1LzA17p0VSG8U4CQ29ARWDolWf6ZIAwm9/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 23"></a>
+            <a href="https://drive.google.com/file/d/1jyIFLQSGxiCoBOzPW4oAH6NSn60Bd1LK/view?usp=share_link" target="_blank"><input type="submit" class="category" value="Capitulo 24"></a>
+        </div>
+        </box>
+</div>
+    </box>
+</div>
+</body>
+</html>
