@@ -1,0 +1,107 @@
+<?php
+    // Iniciamos la sesión
+    session_start();
+
+    // Comprobamos si el usuario ha iniciado sesión
+    if(!isset($_SESSION['email'])){
+        // Si no ha iniciado sesión, destruimos todas las variables de sesión y redireccionamos al usuario a la página de inicio de sesión
+        session_destroy();
+        header("location: ../inicio_sesion.php");
+        exit;
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasía</title>
+    <link rel="stylesheet" href="styles/style_fantasia.css">
+    <script src="alternartexto.js"></script>
+</head>
+<body onload="generarTextoAleatorio()">
+<header class="header">
+    <h1 class="tittle">Fantasia</h1>
+    <nav>
+        <div class="contenedor">
+            <ul>
+            <h2 class="frase" id="randomText">
+                <script>
+                    var randomIndex = Math.floor(Math.random() * texts.length);
+		            var randomText = texts[randomIndex];
+		            document.getElementById("randomText").innerHTML = randomText;
+                </script>
+            </h2>
+            <ul>
+            <form class="logout" method="POST" action="../cerrar_sesion.php">
+                <input type="submit" class="button" value="Cerrar sesión">
+            </form>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="generalbody">
+    <box class="conteleft">
+        <box class="sect1">
+            <br>
+            <a href="../menu.html" target="_self"><input type="submit" class="redirection" value="Inicio"></a>
+            <br>
+            <a href="../peliculas.html" target="_self"><input type="submit" class="redirection" value="Películas"></a>
+            <br>
+            <a href="../series.html" target="_self"><input type="submit" class="redirection" value="Series"></a>
+            <br>
+        </box>
+        <div></div>
+        <box class="sect2">
+            <br>
+            <a href="../categoria.html" target="_self"><input type="submit" class="redirection" value="Categorías"></a>
+            <br>
+        </box>
+        
+        <box class="sect3">
+            <a class="botton" href="accion & aventura.html"><ul>Accion & aventura</ul></a>
+            <a class="botton" href="accion.html"><ul>Accion</ul></a>
+            <a class="botton" href="animacion.html"><ul>Animacion</ul></a>
+            <a class="botton" href="aventura.html"><ul>Aventura</ul></a>
+            <a class="botton" href="ciencia ficcion.html"><ul>Ciencia ficcion</ul></a>
+            <a class="botton" href="comedia.html"><ul>Comedia</ul></a>
+            <a class="botton" href="drama.html"><ul>Drama</ul></a>
+            <a class="botton" href="fantasia.html"><ul>Fantasia</ul></a>
+            <a class="botton" href="infantiles.html"><ul>Infantiles</ul></a>
+            <a class="botton" href="romance.html"><ul>Romance</ul></a>
+            <a class="botton" href="suspenso.html"><ul>Suspeso</ul></a>
+            <a class="botton" href="terror.html"><ul>Terror</ul></a>
+        </box>
+    </box>
+
+<div class="pantalla">
+    <box class="general">    
+        <box class="p1">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="https://drive.google.com/file/d/1qUc8UPLM3Dinh0dSmxE8AN-5FA-7kZUa/view?usp=share_link" target="_blank"><img src="../promocionales/c-p-s.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1jgRTLiw1SvIuNzByoLLOzq52w6Alx6UL/view?usp=share_link" target="_blank"><img src="../promocionales/g-b-u-d.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1MJGtrdRL-qbmi9EgPiOgo4f_kw5r7msQ/view?usp=share_link" target="_blank"><img src="../promocionales/j-m-t.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1qu6PGcrVdGH7wqvmZIg8aFDLd7mFC9e4/view?usp=share_link" target="_blank"><img src="../promocionales/kung fu panda.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1fYMYM8CcqHQRfJRFWtes-j-50PMsRqE1/view?usp=share_link" target="_blank"><img src="../promocionales/k-f-p.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1w709GmUtKqTWaYOnXst1iSHwSEHQKTOF/view?usp=sharing" target="_blank"><img src="../promocionales/m-m.jpg" class="ppicture"></a>
+        </div>
+        </box>
+        <box class="p2">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="https://drive.google.com/file/d/1kIhIZ4jccMuaIadtAu6Xb1gl36RmM2Ru/view?usp=share_link" target="_blank"><img src="../promocionales/m.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1-9z2bYucMP4EnZ7VCvuKkl1re2R9d4Ky/view?usp=share_link" target="_blank"><img src="../promocionales/o-g.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1l9wbAw0sbePtq6CEEH1APa-LfhcSTaHV/view?usp=share_link" target="_blank"><img src="../promocionales/p-s.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1EGuqS_fibOPCQOF1819vPSPTKS0HL96k/view?usp=share_link" target="_blank"><img src="../promocionales/myequestria.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/13Czo-IBVIio7DEUAji8y_y4_MntUGK4-/view?usp=share_link" target="_blank"><img src="../promocionales/myequestria2.jpg" class="ppicture"></a>
+        </div>
+        </box>
+</div>
+    </box>
+</div>
+</body>
+</html>

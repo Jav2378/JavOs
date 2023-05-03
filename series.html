@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series</title>
+    <link rel="stylesheet" href="styles/style_menu.css">
+</head>
+<body>
+<header class="header">
+    <h1 class="tittle">Bienvenido al buscador de JavOs</h1>
+    <nav>
+        <div class="contenedor">
+            <ul>
+            <form class="logout" method="POST" action="cerrar_sesion.php">
+                <input type="submit" class="button" value="Cerrar sesión">
+            </form>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="generalbody">
+<box class="conteleft">
+        <box class="sect1">
+            <br>
+            <a href="menu.html" target="_self"><input type="submit" class="redirection" value="Inicio"></a>
+            <br>
+            <a href="peliculas.html" target="_self"><input type="submit" class="redirection" value="Películas"></a>
+            <br>
+            <a href="series.html" target="_self"><input type="submit" class="redirection" value="Series"></a>
+            <br>
+        </box>
+        <div></div>
+        <box class="sect2">
+            <br>
+            <a href="categoria.html" target="_self"><input type="submit" class="redirection" value="Categorías
+            "></a>
+            <br>
+        </box>
+        <box class="sect4">
+        <form action="guardar_comentario_series.php" method="POST">
+            <br>
+            <div class="input-contenedor">    
+                <textarea rows="5" cols="40"></textarea>
+                <br>
+                <input type="submit" class="coment" value="Enviar">
+            </div>
+        </form>
+        <div id="mensaje">
+            <script>
+                var mensaje = "<?php echo $_GET['mensaje']; ?>";
+                if (mensaje) {
+                    document.getElementById("mensaje").innerHTML = mensaje;
+                }
+            </script>
+        </div>
+        </box>
+    </box>
+
+<div class="pantalla">
+    <box class="general">    
+        <box class="p1">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="series/parasyte.html"_self"><img src="promocionales/Parasyte.jpe" class="ppicture"></a>
+            <a href="series/one punch man.html" target="_self"><img src="promocionales/OPM.webp" class="ppicture"></a>
+            <a href="series/sakura.html" target="_self"><img src="promocionales/SCC.webp" class="ppicture"></a>
+            <a href="series/snk.html" target="_self"><img src="promocionales/snk.jpg" class="ppicture"></a>
+        </div>
+        </box>
+</div>
+    </box>
+</div>
+</body>
+</html>

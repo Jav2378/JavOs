@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+    <link rel="stylesheet" href="styles/style_menu.css">
+</head>
+<body>
+<header class="header">
+    <h1 class="tittle">Bienvenido al buscador de JavOs</h1>
+    <nav>
+        <div class="contenedor">
+            <ul>
+            <form class="logout" method="POST" action="cerrar_sesion.php">
+                <input type="submit" class="button" value="Cerrar sesión">
+            </form>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="generalbody">
+<box class="conteleft">
+        <box class="sect1">
+            <br>
+            <a href="menu.html" target="_self"><input type="submit" class="redirection" value="Inicio"></a>
+            <br>
+            <a href="peliculas.html" target="_self"><input type="submit" class="redirection" value="Películas"></a>
+            <br>
+            <a href="series.html" target="_self"><input type="submit" class="redirection" value="Series"></a>
+            <br>
+        </box>
+        <div></div>
+        <box class="sect2">
+            <br>
+            <a href="categoria.html" target="_self"><input type="submit" class="redirection" value="Categorías
+            "></a>
+            <br>
+        </box>
+        <box class="sect4">
+        <form action="guardar_comentario_peliculas.php" method="POST">
+            <br>
+            <div class="input-contenedor">    
+                <textarea rows="5" cols="40"></textarea>
+                <br>
+                <input type="submit" class="coment" value="Enviar">
+            </div>
+        </form>
+        <div id="mensaje">
+            <script>
+                var mensaje = "<?php echo $_GET['mensaje']; ?>";
+                if (mensaje) {
+                    document.getElementById("mensaje").innerHTML = mensaje;
+                }
+            </script>
+        </div>
+        </box>
+    </box>
+
+<div class="pantalla">
+    <box class="general">    
+        <box class="p1">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="https://drive.google.com/file/d/14RB0KXNIPh6h0qei3EBg4mKdi0gPZWcS/view?usp=share_link" target="_blank"><img src="promocionales/a-i.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1qDnvShSa4UA89zFfP8LmXafc-hz02LiJ/view?usp=share_link" target="_blank"><img src="promocionales/a-p.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1c5ti1bhH9s7uTQNADXNleTr0HhMIB7Tk/view?usp=share_link" target="_blank"><img src="promocionales/b-n.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1vnE4WSVu4x7gBMby3hxeGH1zHs3GlnYY/view?usp=share_link" target="_blank"><img src="promocionales/c-a.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1qUc8UPLM3Dinh0dSmxE8AN-5FA-7kZUa/view?usp=share_link" target="_blank"><img src="promocionales/c-p-s.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1ZLd-l5CRM6EPj-lpCBNwOI8GGoe4WtUO/view?usp=share_link" target="_blank"><img src="promocionales/cloverfield 10.jpg" class="ppicture"></a>
+        </div>
+        </box>
+        <box class="p2">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="https://drive.google.com/file/d/1TOhs1pjgM6N-HhELVEC65Id76BsNIZDb/view?usp=share_link" target="_blank"><img src="promocionales/cloverfield monstruo.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1jnf_hn2kHFKW132ZL3IZ16V6YL_SNzPT/view?usp=share_link" target="_blank"><img src="promocionales/cloverfield paradox.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1StwOKQtZjOErN_C6yTS9PXkqN26O556m/view?usp=share_link" target="_blank"><img src="promocionales/e-s.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1jgRTLiw1SvIuNzByoLLOzq52w6Alx6UL/view?usp=share_link" target="_blank"><img src="promocionales/g-b-u-d.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1vH1r-7YNTTRyHlNq4iPx1Z2xoeqEv8SE/view?usp=share_link" target="_blank"><img src="promocionales/i-m.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1MJGtrdRL-qbmi9EgPiOgo4f_kw5r7msQ/view?usp=share_link" target="_blank"><img src="promocionales/j-m-t.jpg" class="ppicture"></a>
+        </div>
+        </box>
+        <box class="p3">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="https://drive.google.com/file/d/1qu6PGcrVdGH7wqvmZIg8aFDLd7mFC9e4/view?usp=share_link" target="_blank"><img src="promocionales/kung fu panda.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1fYMYM8CcqHQRfJRFWtes-j-50PMsRqE1/view?usp=share_link" target="_blank"><img src="promocionales/k-f-p.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1w709GmUtKqTWaYOnXst1iSHwSEHQKTOF/view?usp=sharing" target="_blank"><img src="promocionales/m-m.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1kIhIZ4jccMuaIadtAu6Xb1gl36RmM2Ru/view?usp=share_link" target="_blank"><img src="promocionales/m.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1EGuqS_fibOPCQOF1819vPSPTKS0HL96k/view?usp=share_link" target="_blank"><img src="promocionales/myequestria.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/13Czo-IBVIio7DEUAji8y_y4_MntUGK4-/view?usp=share_link" target="_blank"><img src="promocionales/myequestria2.jpg" class="ppicture"></a>
+        </div>
+        </box>
+        <box class="p4">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="https://drive.google.com/file/d/1-9z2bYucMP4EnZ7VCvuKkl1re2R9d4Ky/view?usp=share_link" target="_blank"><img src="promocionales/o-g.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1wx2WjZirUrfZr6thkdtY-ljH9lWSfrN_/view?usp=share_link" target="_blank"><img src="promocionales/p-r.jpeg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1l9wbAw0sbePtq6CEEH1APa-LfhcSTaHV/view?usp=share_link" target="_blank"><img src="promocionales/p-s.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1-vh8jAq-SYD1yfJwviwkWGAC83wm_vVW/view?usp=share_link" target="_blank"><img src="promocionales/rec1.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1lpBddNR5p2kJUvZkzQ7y-y5EhwFLATU8/view?usp=share_link" target="_blank"><img src="promocionales/rec2.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1_xxvvi8WrJgTKEulrT9UfzCebn67lML6/view?usp=share_link" target="_blank"><img src="promocionales/s-d-q.jpg" class="ppicture"></a>
+        </div>
+        </box>
+        <box class="p5">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="https://drive.google.com/file/d/1cbtFVualkSGk_HqWZgqeONni28Yk9-P5/view?usp=share_link" target="_blank"><img src="promocionales/s-h-a.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1vupdvyL4hRr3zSQrjmYlIDFUybG66Vps/view?usp=share_link" target="_blank"><img src="promocionales/s-h-a-a-e.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1dE676UdGmkKvAEeka4ZQ30uQ1FGZJHEv/view?usp=share_link" target="_blank"><img src="promocionales/teamhotweels.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1uZh9UFtE4yVY1XaszJJ8-Artkpx6Ba-5/view?usp=share_link" target="_blank"><img src="promocionales/t-a.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1dOkoYj-u5PlnREelFCzZzAmC-ZxFhiZt/view?usp=share_link" target="_blank"><img src="promocionales/u.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/11kS60dDZRY2VRiwuQfCgQ0pDlP37f6tl/view?usp=share_link" target="_blank"><img src="promocionales/volver al futuro.jpg" class="ppicture"></a>
+        </div>
+        </box>
+        <box class="p6">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="https://drive.google.com/file/d/1MdCJeSSSvE0k8W0vYvuIHCeZAiWRnVDg/view?usp=share_link" target="_blank"><img src="promocionales/volver al futuro 2.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1VCGF5wqR_M5yxE8DzrBPBxCHQLDxDT9U/view?usp=share_link" target="_blank"><img src="promocionales/wiplash.webp" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/15LRbMT4PG9BIVZtzMgAcS8NE5IWGp_UM/view?usp=share_link" target="_blank"><img src="promocionales/yo antes de ti.jpg" class="ppicture"></a>
+        </div>
+        </box>
+</div>
+    </box>
+</div>
+</body>
+</html>

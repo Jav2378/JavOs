@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles/style_menu.css">
+    <script src="alternartexto.js"></script>
+</head>
+<body onload="generarTextoAleatorio()">
+<header class="header">
+    <h1 class="tittle">Bienvenido al buscador de JavOs</h1>
+    <nav>
+        <div class="contenedor">
+            <ul>
+            <h2 class="frase" id="randomText">
+                <script>
+                    var randomIndex = Math.floor(Math.random() * texts.length);
+		            var randomText = texts[randomIndex];
+		            document.getElementById("randomText").innerHTML = randomText;
+                </script>
+            </h2>
+            <ul>
+            <form class="logout" method="POST" action="cerrar_sesion.php">
+                <input type="submit" class="button" value="Cerrar sesión">
+            </form>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="generalbody">
+    <box class="conteleft">
+        <box class="sect1">
+            <br>
+            <a href="menu.html" target="_self"><input type="submit" class="redirection" value="Inicio"></a>
+            <br>
+            <a href="peliculas.html" target="_self"><input type="submit" class="redirection" value="Películas"></a>
+            <br>
+            <a href="series.html" target="_self"><input type="submit" class="redirection" value="Series"></a>
+            <br>
+        </box>
+        <div></div>
+        <box class="sect2">
+            <br>
+            <a href="categoria.html" target="_self"><input type="submit" class="redirection" value="Categorías
+            "></a>
+            <br>
+        </box>
+        <box class="sect4">
+        <form action="guardar_comentario_inicio.php" method="POST">
+            <br>
+            <div class="input-contenedor">    
+                <textarea rows="5" cols="40"></textarea>
+                <br>
+                <input type="submit" class="coment" value="Enviar">
+            </div>
+        </form>
+        <div id="mensaje">
+            <script>
+                var mensaje = "<?php echo $_GET['mensaje']; ?>";
+                if (mensaje) {
+                    document.getElementById("mensaje").innerHTML = mensaje;
+                }
+            </script>
+        </div>
+        </box>
+    </box>
+
+<div class="pantalla">
+    <box class="general">    
+        <box class="p1">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="https://drive.google.com/file/d/14RB0KXNIPh6h0qei3EBg4mKdi0gPZWcS/view?usp=share_link" target="_blank"><img src="promocionales/a-i.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1c5ti1bhH9s7uTQNADXNleTr0HhMIB7Tk/view?usp=share_link" target="_blank"><img src="promocionales/b-n.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1vnE4WSVu4x7gBMby3hxeGH1zHs3GlnYY/view?usp=share_link" target="_blank"><img src="promocionales/c-a.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1qUc8UPLM3Dinh0dSmxE8AN-5FA-7kZUa/view?usp=share_link" target="_blank"><img src="promocionales/c-p-s.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1StwOKQtZjOErN_C6yTS9PXkqN26O556m/view?usp=share_link" target="_blank"><img src="promocionales/e-s.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1jgRTLiw1SvIuNzByoLLOzq52w6Alx6UL/view?usp=share_link" target="_blank"><img src="promocionales/g-b-u-d.jpg" class="ppicture"></a>
+        </div>
+        </box>
+        <box class="p2">
+            <!--IMAGEN-->
+            <div class="login-box">
+            <a href="https://drive.google.com/file/d/1dOkoYj-u5PlnREelFCzZzAmC-ZxFhiZt/view?usp=share_link" target="_blank"><img src="promocionales/u.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1uZh9UFtE4yVY1XaszJJ8-Artkpx6Ba-5/view?usp=share_link" target="_blank"><img src="promocionales/t-a.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1cbtFVualkSGk_HqWZgqeONni28Yk9-P5/view?usp=share_link" target="_blank"><img src="promocionales/s-h-a.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1vupdvyL4hRr3zSQrjmYlIDFUybG66Vps/view?usp=share_link" target="_blank"><img src="promocionales/s-h-a-a-e.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1_xxvvi8WrJgTKEulrT9UfzCebn67lML6/view?usp=share_link" target="_blank"><img src="promocionales/s-d-q.jpg" class="ppicture"></a>
+            <a href="https://drive.google.com/file/d/1l9wbAw0sbePtq6CEEH1APa-LfhcSTaHV/view?usp=share_link" target="_blank"><img src="promocionales/p-s.jpg" class="ppicture"></a>
+        </div>
+        </box>
+</div>
+    </box>
+</div>
+</body>
+</html>
